@@ -8,77 +8,123 @@
 nav ul li{
 list-style-type: none;
 display: inline-flex;
-margin: 8px;
+flex-direction: row;
 justify-content: center;
 justify-items: center;
+text-decoration:none;
+margin: 8px;
+align-self: center;
+}
+
+.contactLinks{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #015a64;
+    font-weight: bolder;
+    background-color: #E2B3D4;
+    padding: 16px;
+    border-radius: 20px;
+    border: 3px solid #015a64;
+    border-style:outset;
+    text-decoration:none;
+}
+
+.contactLink{
+    margin-right: 40px;
 }
 
 header{
     background-color:#E2B3D4;
     font-family: 'Lato', sans-serif;
     font-weight: 1000;
-    font-size: 18px;
+    font-size: 15px;
     font-style: bold;
     line-height: 16px;
     color:#050607;
-    padding: 36px;
+    padding: 8px;
     display: flex;
     flex-direction: row;
-    margin-left: 40px;
-    margin-right: 40px;
+    justify-content: center;
+    justify-items: center;
+    padding: 8px;
 }
 
 .logoHeader{
-    width: 75%;
+    width:120px;
+    height: 40px;
     grid-area:logoHeader;
+    align-self: center;
 }
 
 .navigation{
     grid-area: navigation;
+    text-decoration:none;
 }
 
-.nav{
+nav{
+    text-decoration:none;
     grid-area:nav;
-    display: grid;
-    gap:24px;
-    grid-template-areas:
-    "logoHeader navigation"
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
     ;
 }
 
 .welcome{
-    grid-area:welcome;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "item1 item2";
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px; 
 }
 .servicesHome{
-    grid-area:servicesHome;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "item3 item4";
+    background-color: #E2B3D4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px; 
 }
 .aboutMe{
-    background-color: #E2B3D4;
-    grid-area:aboutMe;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "item5 item6";
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px; 
 }
 .clients{
-    grid-area:clients;
+    background-color: #E2B3D4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px; 
 }
 
 .portfolioh{
+    border-radius: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction:column;
     justify-content: center;
-    justify-items: center;
-    gap:24px;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px; 
 }
 
 .item1{
@@ -111,50 +157,62 @@ header{
 
 body{
     background-color:#F4CCA1;
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left:16px;
+    margin-right:16px;
 }
 
 .todo{
-    display: grid;
-    gap: 32px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "nav"
-    "welcome"
-    "servicesHome"
-    "aboutMe"
-    "clients"
-    "footer"
-    ;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-top: 16px;
 }
 
 .Home{
-    width: 75%;
-    margin-left: 120px;
+    width: 220px;
+    height: 150px;
+    border-radius: 10%;
+    align-self: center;
+}
+
+.Home2{
+    width: 200px;
+    height: 150px;
+    border-radius: 10%;
+    align-self: center;
+}
+
+.Home3{
+    width: 260px;
+    height: 120px;
+    border-radius: 10%;
+    align-self: center;
 }
 
 .portfolio1{
-    width: 30%;
-    height: 20%;
+    width: 220px;
+    height: 150px;
+    border-radius: 10%;
 }
 
 h1{
     font-family: 'Lato', sans-serif;
-    font-weight: 1200;
+    font-weight:bolder;
     font-size: 35px;
     font-style: bold;
     line-height: 30px;
     color:#3896A0;
     margin-top: 16px;
+    margin-bottom: 16px;
+    align-self: center;
+    text-align: center;
 }
 
 p{
     margin-top: 16px;
-    margin-bottom: 16px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     line-height: 23px;
     color:#050607
@@ -164,10 +222,10 @@ h2{
     font-family: 'Lato', sans-serif;
     font-weight: 1200;
     font-size: 28px;
-    font-style: bold;
+    font-style: bolder;
     line-height: 30px;
     color:#015a64;
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 button {
@@ -183,18 +241,415 @@ footer{
     background-color:#CCE3C3;
     font-family: 'Lato', sans-serif;
     font-weight: 1000;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     line-height: 30px;
     color:#050607;
-    padding: 32px;
+    padding: 16px;
     display: flex;
-    flex-direction: row;
-    grid-area: footer;
+    flex-direction: column;
 }
+
+.footerUl{
+    grid-area: footerUl;
+    }
 
 footer ul li{
     list-style-type: none;
     display: inline-flex;
-    margin: 16px;
+    margin: 8px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footerLink{
+    width: 24px;
+    height: 24px;
+}
+
+.itemMeli{
+    width: 200px;
+    height: 300px;
+    grid-area: itemMeli;
+    border-radius: 20%;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.myOwnBusinessDiv{
+    grid-area:myOwnBusinessDiv;
+    padding: 8px;
+}
+
+.myOwnBusinessDiv h2{
+    text-align: center;
+    justify-self: center;
+}
+
+.myOwnBusiness{
+    background-color: #E2B3D4;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    grid-area:myOwnBusiness;
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 8px;
+}
+
+.itWorld{
+grid-area: itWorld;
+display: flex;
+flex-direction:column;
+padding: 8px;
+border: 3px solid #015a64;
+border-radius: 16px;
+margin-bottom: 8px;
+}
+
+.early{
+    grid-area: early;
+    display: flex;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.bodyIt{
+    grid-area: bodyIt;
+}
+
+.bodyItimg{
+    grid-area: bodyItimg;
+    width: 270px;
+    height: 200px;
+    align-self: center;
+}
+
+.footerImg{
+    width: 500px;
+    height: 500px;;
+}
+
+.recrearmeImg{
+    width: 250px;
+    height: 140px;
+    align-self: center;
+    grid-area: recrearmeImg;
+    border-radius: 20px;
+}
+
+.disneyImg{
+    width: 250px;
+    height: 180px;
+    align-self: center;
+    grid-area: disneyImg;
+    border-radius:20px ;
+}
+
+.portfolioImg{
+    width: 250px;
+    height: 170px;
+    align-self: center;
+    grid-area: portfolioImg;
+    border-radius: 20px;
+}
+
+.buttonPortfolio{
+    padding: 16px;
+    border-radius: 20px;
+    text-align: center;
+    background-color:#B8DFE3;
+    font-family: 'Lato', sans-serif;
+    font-weight:bolder;
+    font-size: 18px;
+    font-style: bold;
+    line-height: 30px;
+    color:#050607;
+    grid-area: buttonPortfolio;
+    border: 3px solid #3896A0;
+}
+
+.recrearmeText{
+    grid-area: recrearmeText;
+}
+
+.recrearmeCta{
+    grid-area: recrearmeCta;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-items: center;
+    gap: 24px;
+    margin-top: 24px;
+    border: 20px;
+}
+
+.stportfolio{
+    grid-area: stportfolio;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.disney{
+    grid-area: disney;
+    background-color: #E2B3D4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px; 
+}
+
+
+.disneyText{
+    grid-area: disneyText;
+}
+
+.disneyCta{
+    grid-area: disneyCta;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.portfoliopre{
+    grid-area: portfoliopre;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.portfolioText{
+    grid-area: portfolioText;
+}
+
+.portfolioCta{
+    grid-area: portfolioCta;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.mockup{
+    width: 250px;
+    height: 300px;
+    align-self: center;
+    border-radius: 20px;
+    justify-items: center;
+}
+
+.uxResearch{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.researchText{
+    grid-area: researchText;
+}
+
+.reseachImg{
+    grid-area: researchImg;
+}
+
+.uxdesign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    background-color: #E2B3D4;
+}
+
+.uiDesign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.copywriting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    background-color: #E2B3D4;
+}
+
+.costumerX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    padding: 8px;
+    border: 3px solid #015a64;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px){
+    .welcome{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item1 item2"
+        "buttonPortfolio buttonPortfolio";
     }
+
+    .servicesHome{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item4 item3"
+        "buttonPortfolio buttonPortfolio";
+    }
+    .aboutMe{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item5 item6"
+        "buttonPortfolio buttonPortfolio";
+    }
+
+    .clients{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoHeader{
+        width: 240px;
+        height: 80px;
+        grid-area:logoHeader;
+        align-self: center;
+
+    }
+    .Home{
+        width: 330px;
+        height: 250px;
+        border-radius: 10%;
+        align-self: center;
+    }
+    .Home2{
+        width: 320px;
+        height: 240px;
+        border-radius: 10%;
+        align-self: center;
+    }
+    .Home3{
+        width: 430px;
+        height: 250px;
+        margin-right: 16px;
+        border-radius: 10%;
+        align-self: center;
+    }
+
+    .meeting{
+        grid-area: meeting;
+    }
+    .contactPage{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+        "usefulLinks meeting";
+        gap:24px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    
+    .contactPage{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+        "usefulLinks meeting";
+        gap:36px;
+        margin-bottom: 0px;
+    }
+    
+    .todo{
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas:
+        "header header"
+        "welcome aboutMe"
+        "servicesHome servicesHome"
+        "clients clients"
+        "footer footer"
+    }
+    
+    .servicesHome{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item4 item3"
+        "buttonPortfolio buttonPortfolio";
+        background-color: #F4CCA1;
+    }
+
+    .aboutMe{
+        background-color: #E2B3D4;
+    }
+
+    .clients{
+        background-color: #F4CCA1;
+    }
+
+    .welcome{
+        display:flex;
+        flex-direction: column;
+    }
+    .Home2{
+        width: 320px;
+        height: 240px;
+        border-radius: 10%;
+        align-self: center;
+    }
+    .Home3{
+        width: 430px;
+        height: 250px;
+        margin-right: 16px;
+        border-radius: 10%;
+        align-self: center;
+    }
+
+}

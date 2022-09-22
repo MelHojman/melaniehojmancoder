@@ -4,66 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Document</title>
+    <title>Contact me</title>
 </head>
 <body>
     <header>
         <nav>
             <div  class="nav">
-			<img class="mockup" src="../img/logo.png" alt="Logo">
-            <ul>
+                <img class="logoHeader" src="../img/logo.png" alt="logo">
+            </div>
+            <ul class="navigation">
                 <li>
                     <a href="../index.html">Home</a>
                 </li>  
                 <li>
-                    <a href="about.html">About Me</a>
+                    <a href="./about.html">About Me</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a href="./portfolio.html">Portfolio</a>
                 </li>
                 <li>
-                    <a href="services.html">Services</a>
+                    <a href="./services.html">Services</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="./contact.html">Contact</a>
                 </li>
             </ul>
-        </div>
         </nav>
     </header>
     <h1>Contact</h1>
+    <div class="contactPage">
     <section class="usefulLinks">
 		<h2>Useful links</h2><br>
-			<article class="contactLinkedin">
-				<img src="../img/icons8-linkedin-48.png" alt="">
-				<a href="http://linkedin.com/in/melanie-hojman">Linked In</a>
-			</article>
-			<article class="contactBehance">
-				<img src="../img/icons8-behance-48.png" alt="">
-				<a href="http://behance.net/melhojman">Behance-Portfolio</a>
-			</article>
-			<article>
-				<a href=""><img src="../img/icons8-mensaje-relleno-48.png" alt="mail">Mail</a>
-			</article>
-			<article>
-			<a href="https://wa.me/message/QVSXE3L7NI3CD1"><img src="../img/icons8-agitar-teléfono-48.png" alt="whatsapp">Whatsapp</a>
-		</article>
+            <div class="contactLinks">
+			    <article class="contactLink">
+				    <img class="footerLink" src="../img/icons8-linkedin-48.png" alt="">
+				    <a href="http://linkedin.com/in/melanie-hojman">Linked In</a>
+			    </article>
+			    <article class="contactLink">
+				    <img class="footerLink" src="../img/icons8-behance-48.png" alt="">
+				    <a href="http://behance.net/melhojman">Behance-Portfolio</a>
+			    </article>
+			    <article class="contactLink">
+            <img class="footerLink" src="../img/icons8-mensaje-relleno-48.png" alt="Mail">
+				    <a href="">Mail</a>
+			    </article>
+			    <article class="contactLink">
+            <img class="footerLink" src="../img/icons8-agitar-teléfono-48.png" alt="whatsapp">
+			      <a href="https://wa.me/message/QVSXE3L7NI3CD1"> Whatsapp</a>
+		        </article>
+    </div>
 	</section>
-	<section>
-		<h2>Schedule a meeting!</h2>
-            <p>Aquí habrá un formulario</p>
+    <br>
+	<section class="meeting">
+		<h2 class="meeting">Let's schedule a meeting!</h2>
+        <br>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">First and last name</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Mel Hojman" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">mail</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="melanie.hojman@hotmail.com" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label">Comment</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please write at least 10 words.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">Date</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Wen - 21st September</option>
+                <option>Mon - 26th September</option>
+                <option>Wen - 29th September</option>
+                <option>Mon - 3rd October</option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip04" class="form-label">Hour</label>
+                <select class="form-select" id="validationTooltip04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>13:00</option>
+                  <option>13:30</option>
+                  <option>14:00</option>
+                  <option>14:30</option>
+                </select>
+                <div class="invalid-tooltip">
+                  Please select a valid state.
+                </div>
+              </div>
+            
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
 	</section>
+  </div>
     <footer>
+        <img class="logoHeader" src="../img/logo.png" alt="logo">
         <ul>
             <li>
-                <img class="mockup" src="../img/logo.png" alt="logo">
+                <a href="http://behance.net/melhojman"> <img src="../img/icons8-behance-48.png" alt="Portfolio"> Behance </a>
             </li>
             <li>
-                <a href="http://behance.net/melhojman"> <img src="./img/icons8-behance-48.png" alt="Portfolio"> Behance </a>
-            </li>
-            <li>
-                <a href="http://linkedin.com/in/melanie-hojman"> <img src="./img/icons8-linkedin-48.png" alt="LinkedIn"> Linked In </a>
+                <a href="http://linkedin.com/in/melanie-hojman"> <img src="../img/icons8-linkedin-48.png" alt="LinkedIn"> Linked In </a>
             </li>
         </ul>
     </footer>

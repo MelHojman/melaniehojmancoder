@@ -1,0 +1,14 @@
+
+$colorNaranja:#F4CCA1;
+$colorRosa:#E2B3D4;
+$colorCeleste:#B8DFE3;
+$colorAzul:#015a64;
+$colorNegro:#000000;
+$colorVerde:#CCE3C3;
+
+$border: 3px solid $colorAzul;
+
+@mixin size ($width,$height) {
+	height: $height;
+	width: $width;
+}

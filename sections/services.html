@@ -4,96 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mel Hojman's UX UI design portfolio">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<title>Document</title>
 </head>
 <body>
     <header>
+        <div>
+            <img class="logoHeader" src="../img/logo.png" alt="logo">
+        </div>
         <nav>
-            <div  class="nav">
-                <img class="logoHeader" src="../img/logo.png" alt="logo">
-            </div>
-            <ul class="navigation">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>  
-                <li>
-                    <a href="./about.html">About Me</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                 </li>
-                <li>
-                    <a href="./portfolio.html">Portfolio</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Me</a>
                 </li>
-                <li>
-                    <a href="./services.html">Services</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
             </ul>
         </nav>
     </header>
         <h1>Services</h1>
-            <div class="uxResearch"> 
+            <div class="uxResearch" data-aos="fade-up"> 
                 <div class="researchText">
-                    <h2>UX Research</h2><br>
-                    <p>User Research is one of the most important stages of UX design, and this is because there is a basic premise and that is that all designs should be people-centered, so we recommend that every time we are going to develop a digital product, we involve the users of the product early on. <br>
-                    <br>
-                    User research focuses on understanding the characteristics and objectives, the most important thing is to empathize with the user's behaviors, needs and motivators through techniques and methods and methodologies.<br>
-                    <br>
-                    The types of methods to use to perform user research will depend on each of the problems we are going to face.<br>
-                    <br>
-                    When performing user research methods the most important thing is that the process must be people-centered and the segmentation of the people we are going to study will depend on the problem.<br>
-                    <br>
-                    The purpose of conducting user research is to produce designs that improve their activities and better yet entire lives.</p>
+                    <h2>UX Research</h2>
+                    <p>User Research is one of the most important stages of UX design, and this is because there is a basic premise and that is that all designs should be people-centered, so we recommend that every time we are going to develop a digital product, we involve the users of the product early on. </p>
+                    <p>User research focuses on understanding the characteristics and objectives, the most important thing is to empathize with the user's behaviors, needs and motivators through techniques and methods and methodologies.</p>
+                    <p>The types of methods to use to perform user research will depend on each of the problems we are going to face.</p>
+                    <p>When performing user research methods the most important thing is that the process must be people-centered and the segmentation of the people we are going to study will depend on the problem.</p>
+                    <p>The purpose of conducting user research is to produce designs that improve their activities and better yet entire lives.</p>
+                </div>
+                <div class="researchImg">
+                    <img class="mockup" src="../img/13.png" alt="Wireframe evolution">
+                </div>
+            </div>
+            <div class="uxdesign" data-aos="fade-up"> 
+                <div class="researchText">
+                    <h2>UX Design</h2>
+                    <p>The simplest way to think about user experience design is as a verb and a noun. A UX designer designs (verb)—ideates, plans, changes—the things that affect the user experience (noun)—perceptions and responses to a system or service. </p>
+                    <p>I'll help you understanding how your product has to be built priorizing our users needs and easing their pain points.</p>
+                    <p>Why, What and How of product use. The Why involves the users’ motivations for adopting a product, whether they relate to a task they wish to perform with it or to values and views that users associate with the ownership and use of the product. The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way.</p>
                 </div>
                 <div class="researchImg">
                     <img class="mockup" src="../img/ux.png" alt="Wireframe evolution">
                 </div>
             </div>
-            <div class="uxdesign"> 
-                <div class="researchText">
-                    <h2>UX Design</h2><br>
-                    <p>The simplest way to think about user experience design is as a verb and a noun. A UX designer designs (verb)—ideates, plans, changes—the things that affect the user experience (noun)—perceptions and responses to a system or service. <br>
-                    <br>
-                    I'll help you understanding how your product has to be built priorizing our users needs and easing their pain points. <br>
-                    <br>
-                    Why, What and How of product use. The Why involves the users’ motivations for adopting a product, whether they relate to a task they wish to perform with it or to values and views that users associate with the ownership and use of the product. The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way.</p>
-                </div>
-                <div class="researchImg">
-                    <img class="mockup" src="../img/ux.png" alt="Wireframe evolution"><br>
-                </div>
-            </div>
-            <div class="uiDesign"> 
-                <div class="researchText">
-                    <h2>UI Design</h2><br>
-                    <p>User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style. Designers aim to create interfaces which users find easy to use and pleasurable. UI design refers to graphical user interfaces and other forms—e.g., voice-controlled interfaces. <br>
-                    <br>
-                    Users judge designs quickly and care about usability and likeability.
+            <div class="uiDesign" data-aos="fade-up"> 
+                <div class="researchText" >
+                    <h2>UI Design</h2>
+                    <p>User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style. Designers aim to create interfaces which users find easy to use and pleasurable. UI design refers to graphical user interfaces and other forms—e.g., voice-controlled interfaces. </p>
+                    <p>Users judge designs quickly and care about usability and likeability.
                     UIs should also be enjoyable (or at least satisfying and frustration-free).
-                    UIs should communicate brand values and reinforce users’ trust.
-                    </p>
+                    UIs should communicate brand values and reinforce users’ trust.</p>
                 </div>
                 <div class="researchImg">
-                    <img class="mockup" src="../img/ux.png" alt="Wireframe evolution">
+                    <img class="mockup" src="../img/Cooki.png" alt="Wireframe evolution">
                 </div>
             </div>
-            <div class="copywriting">
+            <div class="copywriting" data-aos="fade-up">
                 <div class="researchText">
-                    <h2>Copywriting and content design</h2><br>
+                    <h2>Copywriting and content design</h2>
                     <p>We have our product, we know what's best for the user, the visual part and function. No it's time to write our content to atract our users and keep them engaged with our product</p>
                 </div>
                 <div class="researchImg">
-                    <img class="mockup" src="../img/ux.png" alt="Wireframe evolution">
+                    <img class="mockup" src="../img/Writing Creative Portfolio Hojman Melanie_compressed-10.png" alt="Wireframe evolution">
                 </div>
             </div>
-            <div class="costumerX"> 
+            <div class="costumerX" data-aos="fade-up"> 
                 <div class="researchText">
-                    <h2>Costumer Experience</h2><br>
+                    <h2>Costumer Experience</h2>
                     <p>Now that our user has used our product or service is our costumer. It's time keep them happy and engaged to us</p>
-                </div>
-                <div class="researchImg">
-                    <img class="mockup" src="../img/ux.png" alt="Wireframe evolution">
                 </div>
             </div>
         <footer>
@@ -107,5 +100,9 @@
                     </li>
                 </ul>
         </footer>
+        <script>
+            AOS.init();
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

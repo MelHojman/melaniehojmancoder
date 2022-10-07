@@ -1,0 +1,5 @@
+/*aca agregar las imagenes está width y height*/
+
+.my_mixin {
+	@include size (500px,50px);
+}

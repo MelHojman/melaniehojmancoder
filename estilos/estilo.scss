@@ -1,32 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-*{
-    padding:0;
-    margin:0;
-}
-
-nav ul li{
-list-style-type: none;
-display: inline-flex;
-flex-direction: row;
-justify-content: center;
-justify-items: center;
-text-decoration:none;
-margin: 8px;
-align-self: center;
-}
+@import "fuentes";
+@import "generales";
+@import "nav";
+@import "variableGlobal";
 
 .contactLinks{
     list-style-type: none;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    color: #015a64;
+    color: $colorAzul;
     font-weight: bolder;
-    background-color: #E2B3D4;
+    background-color: $colorRosa;
     padding: 16px;
     border-radius: 20px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-style:outset;
     text-decoration:none;
 }
@@ -35,21 +22,6 @@ align-self: center;
     margin-right: 40px;
 }
 
-header{
-    background-color:#E2B3D4;
-    font-family: 'Lato', sans-serif;
-    font-weight: 1000;
-    font-size: 15px;
-    font-style: bold;
-    line-height: 16px;
-    color:#050607;
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    padding: 8px;
-}
 
 .logoHeader{
     width:120px;
@@ -82,9 +54,11 @@ nav{
     border: 3px solid #015a64;
     border-radius: 16px;
     margin-bottom: 8px; 
+    margin-left:16px;
+    margin-right:8px;
 }
 .servicesHome{
-    background-color: #E2B3D4;
+    background-color: $colorRosa;
     border-radius: 20px;
     display: flex;
     flex-direction:column;
@@ -93,6 +67,8 @@ nav{
     border: 3px solid #015a64;
     border-radius: 16px;
     margin-bottom: 8px; 
+    margin-left:8px;
+    margin-right:16px;
 }
 .aboutMe{
     border-radius: 20px;
@@ -100,20 +76,24 @@ nav{
     flex-direction:column;
     align-items: center;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px; 
+    margin-left:16px;
+    margin-right:16px;
 }
 .clients{
-    background-color: #E2B3D4;
+    background-color: $colorRosa;
     border-radius: 20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px; 
+    margin-left:16px;
+    margin-right:16px;
 }
 
 .portfolioh{
@@ -122,7 +102,7 @@ nav{
     flex-direction:column;
     justify-content: center;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px; 
 }
@@ -153,12 +133,6 @@ nav{
 
 .item7{
     grid-area:item7;
-}
-
-body{
-    background-color:#F4CCA1;
-    margin-left:16px;
-    margin-right:16px;
 }
 
 .todo{
@@ -193,61 +167,6 @@ body{
     width: 220px;
     height: 150px;
     border-radius: 10%;
-}
-
-h1{
-    font-family: 'Lato', sans-serif;
-    font-weight:bolder;
-    font-size: 35px;
-    font-style: bold;
-    line-height: 30px;
-    color:#3896A0;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    align-self: center;
-    text-align: center;
-}
-
-p{
-    margin-top: 16px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 23px;
-    color:#050607
-}
-
-h2{
-    font-family: 'Lato', sans-serif;
-    font-weight: 1200;
-    font-size: 28px;
-    font-style: bolder;
-    line-height: 30px;
-    color:#015a64;
-    margin-top: 8px;
-}
-
-button {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8px;
-    margin: 40px;
-    background-color: #B8DFE3;
-    font-size: 24px;
-}
-
-footer{
-    background-color:#CCE3C3;
-    font-family: 'Lato', sans-serif;
-    font-weight: 1000;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 30px;
-    color:#050607;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
 }
 
 .footerUl{
@@ -287,8 +206,8 @@ footer ul li{
 }
 
 .myOwnBusiness{
-    background-color: #E2B3D4;
-    border: 3px solid #015a64;
+    background-color: $colorRosa;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     grid-area:myOwnBusiness;
     display: flex;
@@ -301,7 +220,7 @@ grid-area: itWorld;
 display: flex;
 flex-direction:column;
 padding: 8px;
-border: 3px solid #015a64;
+border: 3px solid $colorAzul;
 border-radius: 16px;
 margin-bottom: 8px;
 }
@@ -311,7 +230,7 @@ margin-bottom: 8px;
     display: flex;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
 }
@@ -360,7 +279,7 @@ margin-bottom: 8px;
     padding: 16px;
     border-radius: 20px;
     text-align: center;
-    background-color:#B8DFE3;
+    background-color:$colorCeleste;
     font-family: 'Lato', sans-serif;
     font-weight:bolder;
     font-size: 18px;
@@ -368,7 +287,7 @@ margin-bottom: 8px;
     line-height: 30px;
     color:#050607;
     grid-area: buttonPortfolio;
-    border: 3px solid #3896A0;
+    border: 3px solid $colorAzul;
     width: 180px;
     height: 60px;
 }
@@ -395,20 +314,20 @@ margin-bottom: 8px;
     justify-content: center;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
 }
 
 .disney{
     grid-area: disney;
-    background-color: #E2B3D4;
+    background-color: $colorRosa;
     border-radius: 20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px; 
 }
@@ -435,7 +354,7 @@ margin-bottom: 8px;
     justify-content: center;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
 }
@@ -469,7 +388,7 @@ margin-bottom: 8px;
     justify-content: center;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
 }
@@ -488,10 +407,10 @@ margin-bottom: 8px;
     justify-content: center;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
-    background-color: #E2B3D4;
+    background-color: $colorRosa;
 }
 
 .uiDesign{
@@ -500,7 +419,7 @@ margin-bottom: 8px;
     justify-content: center;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
 }
@@ -511,10 +430,10 @@ margin-bottom: 8px;
     justify-content: center;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
-    background-color: #E2B3D4;
+    background-color: $colorRosa;
 }
 
 .costumerX{
@@ -523,9 +442,21 @@ margin-bottom: 8px;
     justify-content: center;
     flex-direction:column;
     padding: 8px;
-    border: 3px solid #015a64;
+    border: 3px solid $colorAzul;
     border-radius: 16px;
     margin-bottom: 8px;
+}
+
+.meeting{
+    grid-area: meeting;
+    margin-left:24px;
+    margin-right: 24px;
+}
+
+.usefulLinks{
+    grid-area: usefulLinks;
+    margin-left:24px;
+    margin-right: 24px;
 }
 
 @media screen and (min-width: 768px){
@@ -584,9 +515,7 @@ margin-bottom: 8px;
         align-self: center;
     }
 
-    .meeting{
-        grid-area: meeting;
-    }
+    
     .contactPage{
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -667,4 +596,15 @@ margin-bottom: 8px;
         align-self: center;
     }
 
+    .usefulLinks{
+        grid-area: usefulLinks;
+        margin-left:16px;
+        margin-right: 16px;
+    }
+    
+    .usefulLinks{
+        grid-area: usefulLinks;
+        margin-left:8px;
+        margin-right: 8px;
+    }
 }

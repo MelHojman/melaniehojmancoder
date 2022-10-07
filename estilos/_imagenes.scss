@@ -1,5 +1,3 @@
-/*aca agregar las imagenes está width y height*/
-
 .my_mixin {
 	@include size (500px,50px);
 }
@@ -82,4 +80,19 @@
 	border-radius: $borderCardsMobile;
     align-self: center;
     justify-items: center;
+}
+
+.mockup2{
+    @include size (250px,100px);
+    border-radius: $borderCardsMobile;
+    align-self: center;
+    justify-items: center;
+}
+
+.mockup3{
+    @include size (250px,100px);
+}
+
+.mockup4{
+    @include size (250px,100px);
 }

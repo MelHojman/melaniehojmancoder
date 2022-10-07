@@ -28,64 +28,21 @@
     text-decoration:none;
 }
 
-.welcome{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px; 
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
-}
 .servicesHome{
+    @extend .welcome;
     background-color: $colorRosa;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px; 
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
 }
+
 .aboutMe{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px; 
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
+    @extend .welcome;
 }
 .clients{
     background-color: $colorRosa;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px; 
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
+    @extend .welcome;
 }
 
 .portfolioh{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px; 
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
+    @extend .welcome;
 }
 
 .item1{
@@ -148,39 +105,19 @@ footer ul li{
 }
 
 .myOwnBusiness{
+    @extend .welcome;
     background-color: $colorRosa;
-    border: $border;
-    border-radius: $borderCardsMobile;
     grid-area:myOwnBusiness;
-    display: flex;
-    flex-direction:column;
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
-    margin-bottom: $marginCardsMobile;
 }
 
 .itWorld{
-grid-area: itWorld;
-display: flex;
-flex-direction:column;
-padding: $paddingCardsMobile;
-border: $border;
-border-radius: $borderCardsMobile;
-margin-bottom: $marginCardsMobile;
-margin-left:$marginCardsMobile;
-margin-right:$marginCardsMobile;
+    @extend .welcome;
+    grid-area: itWorld;
 }
 
 .early{
+    @extend .welcome;
     grid-area: early;
-    display: flex;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: $marginCardsMobile;
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
 }
 
 .bodyIt{
@@ -206,30 +143,13 @@ margin-right:$marginCardsMobile;
 
 .stportfolio{
     grid-area: stportfolio;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px;
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
+    @extend .welcome;
 }
 
 .disney{
     grid-area: disney;
     background-color: $colorRosa;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px; 
-    margin-left:$marginCardsMobile;
-    margin-right:$marginCardsMobile;
+    @extend .welcome;
 }
 
 
@@ -249,14 +169,7 @@ margin-right:$marginCardsMobile;
 
 .portfoliopre{
     grid-area: portfoliopre;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px;
+    @extend .welcome;
 }
 
 .portfolioText{
@@ -274,15 +187,7 @@ margin-right:$marginCardsMobile;
 }
 
 .uxResearch{
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px;
+    @extend .welcome;
 }
 
 .researchText{
@@ -294,49 +199,21 @@ margin-right:$marginCardsMobile;
 }
 
 .uxdesign{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px;
+    @extend .welcome;
     background-color: $colorRosa;
 }
 
 .uiDesign{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px;
+    @extend .welcome;
 }
 
 .copywriting{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px;
+    @extend .welcome;
     background-color: $colorRosa;
 }
 
 .costumerX{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction:column;
-    padding: $paddingCardsMobile;
-    border: $border;
-    border-radius: $borderCardsMobile;
-    margin-bottom: 8px;
+    @extend .welcome;
 }
 
 .meeting{

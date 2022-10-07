@@ -80,3 +80,16 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+.welcome{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
+    margin-bottom: 8px; 
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
+}

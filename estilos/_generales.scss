@@ -32,8 +32,8 @@ p{
 }
 
 h2{
-    font-family: 'Lato', sans-serif;
-    font-weight: 1200;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
     font-size: 28px;
     font-style: bolder;
     line-height: 30px;
@@ -49,6 +49,23 @@ button {
     margin: 40px;
     background-color: $colorCeleste;
     font-size: 24px;
+}
+
+.buttonPortfolio{
+    padding: 16px;
+    border-radius: 20px;
+    text-align: center;
+    background-color:$colorCeleste;
+    font-family: 'Lato', sans-serif;
+    font-weight:bolder;
+    font-size: 18px;
+    font-style: bold;
+    line-height: 30px;
+    color:#050607;
+    grid-area: buttonPortfolio;
+    border: 3px solid $colorAzul;
+    width: 180px;
+    height: 60px;
 }
 
 footer{

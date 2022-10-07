@@ -3,3 +3,83 @@
 .my_mixin {
 	@include size (500px,50px);
 }
+
+.logoHeader{
+	@include size (120px,40px);
+    grid-area:logoHeader;
+    align-self: center;
+}
+
+.home{
+	@include size (220px,150px);
+    border-radius: $borderImg;
+    align-self: center;
+}
+
+.home2{
+    @include size (200px,150px);
+    border-radius: $borderImg;
+    align-self: center;
+}
+
+.home3{
+	@include size (260px,120px);
+    border-radius: $borderImg;
+    align-self: center;
+}
+
+.itemMeli{
+	@include size (200px,300px);
+    border-radius: $borderImg;
+    grid-area: itemMeli;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.bodyItimg{
+	@include size (270px,200px);
+    grid-area: bodyItimg;
+    align-self: center;
+}
+
+.footerImg{
+	@include size (500px,500px);
+}
+
+.portfolio1{
+	@include size (220px,150px);
+	border-radius: $borderImg;
+}
+
+.footerLink{
+    @include size (24px,24px);
+}
+
+
+.recrearmeImg{
+	@include size (250px,140px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    grid-area: recrearmeImg;
+}
+
+.disneyImg{
+	@include size (250px,180px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    grid-area: disneyImg;
+}
+
+.portfolioImg{
+	@include size (250px,170px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    grid-area: portfolioImg;
+}
+
+.mockup{
+	@include size (250px,300px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    justify-items: center;
+}

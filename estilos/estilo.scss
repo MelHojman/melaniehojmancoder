@@ -2,6 +2,7 @@
 @import "generales";
 @import "nav";
 @import "variableGlobal";
+@import "imagenes";
 
 .contactLinks{
     list-style-type: none;
@@ -12,8 +13,8 @@
     font-weight: bolder;
     background-color: $colorRosa;
     padding: 16px;
-    border-radius: 20px;
-    border: 3px solid $colorAzul;
+    border-radius: $borderCardsMobile;
+    border: $border;
     border-style:outset;
     text-decoration:none;
 }
@@ -22,89 +23,69 @@
     margin-right: 40px;
 }
 
-
-.logoHeader{
-    width:120px;
-    height: 40px;
-    grid-area:logoHeader;
-    align-self: center;
-}
-
 .navigation{
     grid-area: navigation;
     text-decoration:none;
 }
 
-nav{
-    text-decoration:none;
-    grid-area:nav;
-    align-self: center;
-    justify-items: center;
-    justify-content: center;
-    ;
-}
-
 .welcome{
-    border-radius: 20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 8px;
-    border: 3px solid #015a64;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px; 
-    margin-left:16px;
-    margin-right:8px;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 .servicesHome{
     background-color: $colorRosa;
-    border-radius: 20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
-    padding: 8px;
-    border: 3px solid #015a64;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px; 
-    margin-left:8px;
-    margin-right:16px;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 .aboutMe{
-    border-radius: 20px;
     display: flex;
     flex-direction:column;
     align-items: center;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px; 
-    margin-left:16px;
-    margin-right:16px;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 .clients{
     background-color: $colorRosa;
-    border-radius: 20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px; 
-    margin-left:16px;
-    margin-right:16px;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 
 .portfolioh{
-    border-radius: 20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px; 
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 
 .item1{
@@ -139,34 +120,7 @@ nav{
     display: flex;
     flex-direction:column;
     justify-content: center;
-    margin-top: 16px;
-}
-
-.home{
-    width: 220px;
-    height: 150px;
-    border-radius: 10%;
-    align-self: center;
-}
-
-.home2{
-    width: 200px;
-    height: 150px;
-    border-radius: 10%;
-    align-self: center;
-}
-
-.home3{
-    width: 260px;
-    height: 120px;
-    border-radius: 10%;
-    align-self: center;
-}
-
-.portfolio1{
-    width: 220px;
-    height: 150px;
-    border-radius: 10%;
+    margin-top: $marginCardsMobile;
 }
 
 .footerUl{
@@ -181,23 +135,11 @@ footer ul li{
     justify-items: center;
 }
 
-.footerLink{
-    width: 24px;
-    height: 24px;
-}
-
-.itemMeli{
-    width: 200px;
-    height: 300px;
-    grid-area: itemMeli;
-    border-radius: 20%;
-    align-self: center;
-    margin-bottom: 8px;
-}
-
 .myOwnBusinessDiv{
     grid-area:myOwnBusinessDiv;
-    padding: 8px;
+    padding: $paddingCardsMobile;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 
 .myOwnBusinessDiv h2{
@@ -207,89 +149,42 @@ footer ul li{
 
 .myOwnBusiness{
     background-color: $colorRosa;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    border: $border;
+    border-radius: $borderCardsMobile;
     grid-area:myOwnBusiness;
     display: flex;
     flex-direction:column;
-    margin-bottom: 8px;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
+    margin-bottom: $marginCardsMobile;
 }
 
 .itWorld{
 grid-area: itWorld;
 display: flex;
 flex-direction:column;
-padding: 8px;
-border: 3px solid $colorAzul;
-border-radius: 16px;
-margin-bottom: 8px;
+padding: $paddingCardsMobile;
+border: $border;
+border-radius: $borderCardsMobile;
+margin-bottom: $marginCardsMobile;
+margin-left:$marginCardsMobile;
+margin-right:$marginCardsMobile;
 }
 
 .early{
     grid-area: early;
     display: flex;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
-    margin-bottom: 8px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
+    margin-bottom: $marginCardsMobile;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 
 .bodyIt{
     grid-area: bodyIt;
-}
-
-.bodyItimg{
-    grid-area: bodyItimg;
-    width: 270px;
-    height: 200px;
-    align-self: center;
-}
-
-.footerImg{
-    width: 500px;
-    height: 500px;;
-}
-
-.recrearmeImg{
-    width: 250px;
-    height: 140px;
-    align-self: center;
-    grid-area: recrearmeImg;
-    border-radius: 20px;
-}
-
-.disneyImg{
-    width: 250px;
-    height: 180px;
-    align-self: center;
-    grid-area: disneyImg;
-    border-radius:20px ;
-}
-
-.portfolioImg{
-    width: 250px;
-    height: 170px;
-    align-self: center;
-    grid-area: portfolioImg;
-    border-radius: 20px;
-}
-
-.buttonPortfolio{
-    padding: 16px;
-    border-radius: 20px;
-    text-align: center;
-    background-color:$colorCeleste;
-    font-family: 'Lato', sans-serif;
-    font-weight:bolder;
-    font-size: 18px;
-    font-style: bold;
-    line-height: 30px;
-    color:#050607;
-    grid-area: buttonPortfolio;
-    border: 3px solid $colorAzul;
-    width: 180px;
-    height: 60px;
 }
 
 .recrearmeText{
@@ -304,7 +199,9 @@ margin-bottom: 8px;
     justify-items: center;
     gap: 24px;
     margin-top: 24px;
-    border: 20px;
+    border: $borderCardsMobile;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 
 .stportfolio{
@@ -313,23 +210,26 @@ margin-bottom: 8px;
     flex-direction: column;
     justify-content: center;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px;
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 
 .disney{
     grid-area: disney;
     background-color: $colorRosa;
-    border-radius: 20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px; 
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
 }
 
 
@@ -353,9 +253,9 @@ margin-bottom: 8px;
     flex-direction: column;
     justify-content: center;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px;
 }
 
@@ -373,23 +273,15 @@ margin-bottom: 8px;
     margin-top: 24px;
 }
 
-.mockup{
-    width: 250px;
-    height: 300px;
-    align-self: center;
-    border-radius: 20px;
-    justify-items: center;
-}
-
 .uxResearch{
     display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px;
 }
 
@@ -406,9 +298,9 @@ margin-bottom: 8px;
     flex-direction: column;
     justify-content: center;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px;
     background-color: $colorRosa;
 }
@@ -418,9 +310,9 @@ margin-bottom: 8px;
     flex-direction: column;
     justify-content: center;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px;
 }
 
@@ -429,9 +321,9 @@ margin-bottom: 8px;
     flex-direction: column;
     justify-content: center;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px;
     background-color: $colorRosa;
 }
@@ -441,9 +333,9 @@ margin-bottom: 8px;
     flex-direction: column;
     justify-content: center;
     flex-direction:column;
-    padding: 8px;
-    border: 3px solid $colorAzul;
-    border-radius: 16px;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
     margin-bottom: 8px;
 }
 

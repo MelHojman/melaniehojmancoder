@@ -1,8 +1,9 @@
+@import "variableGlobal";
 @import "fuentes";
 @import "generales";
 @import "nav";
-@import "variableGlobal";
 @import "imagenes";
+@import "media";
 
 .contactLinks{
     list-style-type: none;
@@ -73,12 +74,6 @@
     grid-area:item7;
 }
 
-.todo{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    margin-top: $marginCardsMobile;
-}
 
 .footerUl{
     grid-area: footerUl;
@@ -112,6 +107,7 @@ footer ul li{
 
 .itWorld{
     @extend .welcome;
+    align-items: center;
     grid-area: itWorld;
 }
 
@@ -134,6 +130,7 @@ footer ul li{
     flex-direction:column;
     justify-content: center;
     justify-items: center;
+    align-items: center;
     gap: 24px;
     margin-top: 24px;
     border: $borderCardsMobile;
@@ -158,13 +155,7 @@ footer ul li{
 }
 
 .disneyCta{
-    grid-area: disneyCta;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    justify-items: center;
-    gap: 24px;
-    margin-top: 24px;
+    @extend .recrearmeCta;
 }
 
 .portfoliopre{
@@ -178,12 +169,7 @@ footer ul li{
 
 .portfolioCta{
     grid-area: portfolioCta;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    justify-items: center;
-    gap: 24px;
-    margin-top: 24px;
+    @extend .recrearmeCta;
 }
 
 .uxResearch{
@@ -228,152 +214,6 @@ footer ul li{
     margin-right: 24px;
 }
 
-@media screen and (min-width: 768px){
-    .welcome{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "item1 item2"
-        "buttonPortfolio buttonPortfolio";
-    }
-
-    .servicesHome{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "item4 item3"
-        "buttonPortfolio buttonPortfolio";
-    }
-    .aboutMe{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "item5 item6"
-        "buttonPortfolio buttonPortfolio";
-    }
-
-    .clients{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .logoHeader{
-        width: 240px;
-        height: 80px;
-        grid-area:logoHeader;
-        align-self: center;
-
-    }
-    .home{
-        width: 330px;
-        height: 250px;
-        border-radius: 10%;
-        align-self: center;
-    }
-    .home2{
-        width: 320px;
-        height: 240px;
-        border-radius: 10%;
-        align-self: center;
-    }
-    .home3{
-        width: 430px;
-        height: 250px;
-        margin-right: 16px;
-        border-radius: 10%;
-        align-self: center;
-    }
-
-    
-    .contactPage{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:
-        "usefulLinks meeting";
-        gap:24px;
-    }
-    footer{
-        background-color:#CCE3C3;
-        font-family: 'Lato', sans-serif;
-        font-weight: 1000;
-        font-size: 14px;
-        font-style: normal;
-        text-decoration: none;
-        line-height: 30px;
-        color:#050607;
-        padding: 16px;
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    
-    .contactPage{
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-template-areas:
-        "usefulLinks meeting";
-        gap:36px;
-        margin-bottom: 0px;
-    }
-    
-    .todo{
-        display: grid;
-        gap: 24px;
-        grid-template-columns: 4fr 1fr;
-        grid-template-areas:
-        "header header"
-        "welcome aboutMe"
-        "servicesHome servicesHome"
-        "clients clients"
-        "footer footer"
-    }
-    
-    .servicesHome{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "item4 item3"
-        "buttonPortfolio buttonPortfolio";
-        background-color: #F4CCA1;
-    }
-
-    .aboutMe{
-        background-color: #E2B3D4;
-    }
-
-    .clients{
-        background-color: #F4CCA1;
-    }
-
-    .welcome{
-        display:flex;
-        flex-direction: column;
-    }
-    .home2{
-        width: 320px;
-        height: 240px;
-        border-radius: 10%;
-        align-self: center;
-    }
-    .home3{
-        width: 430px;
-        height: 250px;
-        margin-right: 16px;
-        border-radius: 10%;
-        align-self: center;
-    }
-
-    .usefulLinks{
-        grid-area: usefulLinks;
-        margin-left:16px;
-        margin-right: 16px;
-    }
-    
-    .usefulLinks{
-        grid-area: usefulLinks;
-        margin-left:8px;
-        margin-right: 8px;
-    }
+.welcoming{
+    text-align: center;
 }

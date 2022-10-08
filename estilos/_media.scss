@@ -1,0 +1,353 @@
+h2{
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    font-style: bolder;
+    line-height: 30px;
+    color:$colorAzul;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px){
+        padding: $marginCardsMobile;
+    }
+}
+
+.servicesHome{
+
+    @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item4 item3"
+        "buttonPortfolio buttonPortfolio";
+    }
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item4 item3"
+        "buttonPortfolio buttonPortfolio";
+        background-color: $colorNaranja;
+    }
+}
+
+.aboutMe{
+
+    @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item5 item6"
+        "buttonPortfolio buttonPortfolio";
+    }
+}
+
+.clients{
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 1024px){
+        background-color: $colorNaranja;
+    }
+}
+
+.logoHeader{
+
+    @media screen and (min-width: 768px){
+        width: 240px;
+        height: 80px;
+        grid-area:logoHeader;
+        align-self: center;
+    }
+}
+
+.home{
+    @include size (220px,150px);
+    border-radius: $borderImg;
+    align-self: center;
+    @media screen and (min-width: 768px){
+        @include size (330px,250px);
+    }
+    @media screen and (min-width: 1024px){
+        @include size (810px,600px);
+        margin-bottom: $marginCardsMobile;
+    }
+}
+
+.home2{
+    @include size (200px,150px);
+    border-radius: $borderImg;
+    align-self: center;
+    @media screen and (min-width: 768px){
+        @include size (320px,240px);
+    }
+    @media screen and (min-width: 1024px){
+        @include size (810px,600px);
+        margin-bottom: $marginCardsMobile;
+    }
+}
+
+.home3{
+    @include size (260px,120px);
+    border-radius: $borderImg;
+    align-self: center;
+    @media screen and (min-width: 768px){
+        @include size (430px,250px);
+    }
+    @media screen and (min-width: 1024px){
+        @include size (810px,400px);
+        margin-bottom: $marginCardsMobile;
+    }
+}
+
+.contactPage{
+    @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+        "usefulLinks meeting";
+        gap:24px;
+    }
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+        "usefulLinks meeting";
+        gap:36px;
+        margin-bottom: 0px;
+    }
+}
+
+.footer{
+    background-color:$colorVerde;
+    font-family: 'Lato', sans-serif;
+    font-weight: 1000;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 30px;
+    color:$colorNegro;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+}
+
+.welcome{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: $paddingCardsMobile;
+    border: $border;
+    border-radius: $borderCardsMobile;
+    margin-bottom: 8px; 
+    margin-left:$marginCardsMobile;
+    margin-right:$marginCardsMobile;
+    @media screen and (min-width: 768px){
+        display:flex;
+        flex-direction: column;
+        font-size: 23px;
+        margin-left:$marginBody;
+        margin-right: $marginBody;
+    }
+}
+
+.usefulLinks{
+    @media screen and (min-width: 1024px){
+        grid-area: usefulLinks;
+        margin-left:16px;
+        margin-right: 16px;
+    }
+}
+
+p{
+    margin-top: 8px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 23px;
+    color:$colorNegro;
+    @media screen and (min-width: 768px){
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    @media screen and (min-width: 1024px){
+        font-weight: 550;
+        margin-top:16px;
+    }
+}
+
+.recrearmeImg{
+	@include size (250px,140px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    grid-area: recrearmeImg;
+    @media screen and (min-width: 768px){
+        @include size (540px,300px);
+        border-radius: $borderCardsDesk;
+    }
+    @media screen and (min-width: 1024px){
+
+    }
+}
+
+.disneyImg{
+	@include size (250px,180px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    grid-area: disneyImg;
+    @media screen and (min-width: 768px){
+        @include size (540px,380px);
+        border-radius: $borderCardsDesk;
+    }
+    @media screen and (min-width: 1024px){
+
+    }
+}
+
+.portfolioImg{
+	@include size (250px,170px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    grid-area: portfolioImg;
+    @media screen and (min-width: 768px){
+        @include size (540px,370px);
+        border-radius: $borderCardsDesk;
+    }
+    @media screen and (min-width: 1024px){
+
+    }
+}
+
+.mockup{
+	@include size (250px,300px);
+	border-radius: $borderCardsMobile;
+    align-self: center;
+    justify-items: center;
+    @media screen and (min-width: 768px){
+        @include size (540px,600px);
+        margin-top: $marginCardsMobile;
+        border-radius: $borderCardsDesk;
+    }
+    @media screen and (min-width: 1024px){
+
+    }
+}
+
+.mockup2{
+    @include size (250px,140px);
+    border-radius: $borderCardsMobile;
+    align-self: center;
+    justify-items: center;
+    @media screen and (min-width: 768px){
+        @include size (540px,300px);
+        border-radius: $borderCardsDesk;
+        margin-top:$marginCardsMobile;
+    }
+    @media screen and (min-width: 1024px){
+        @include size (810px,450px);
+        margin-bottom: $marginCardsMobile;
+    }
+}
+
+.mockup3{
+    @include size (250px,140px);
+    @media screen and (min-width: 768px){
+        @include size (540px,320px);
+        border-radius: $borderCardsDesk;
+        margin-top:$marginCardsMobile;
+    }
+    @media screen and (min-width: 1024px){
+        @include size (810px,470px);
+        margin-bottom: $marginCardsMobile;
+    }
+}
+
+.mockup4{
+    @include size (250px,140px);
+    @media screen and (min-width: 768px){
+        @include size (540px,300px);
+        border-radius: $borderCardsDesk;
+        margin-top:$marginCardsMobile;
+    }
+    @media screen and (min-width: 1024px){
+        @include size (810px,450px);
+        margin-bottom: $marginCardsMobile;
+    }
+}
+
+.itemMeli{
+	@include size (200px,300px);
+    border-radius: $borderImg;
+    grid-area: itemMeli;
+    align-self: center;
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px){
+        @include size (420px,600px);
+        border-radius: $borderCardsDesk;
+        margin-top:$marginCardsMobile;
+    }
+}
+
+
+.bodyItimg{
+	@include size (270px,200px);
+    grid-area: bodyItimg;
+    align-self: center;
+    @media screen and (min-width: 768px){
+        @include size (540px,400px);
+        border-radius: $borderCardsDesk;
+        margin-top:$marginCardsMobile;
+    }
+}
+
+button {
+    padding: $paddingCardsMobile;
+    margin: $marginCardsMobile;
+    background-color: $colorCeleste;
+    border-radius: $borderCardsMobile;
+    text-align: center;
+    background-color:$colorCeleste;
+    font-family: 'Lato', sans-serif;
+    font-weight:bolder;
+    font-size: 16px;
+    font-style: bold;
+    line-height: 30px;
+    color:$colorNegro;
+    grid-area: buttonPortfolio;
+    border: $border;
+    width: 180px;
+    height: 60px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 280px;
+        font-size: 24px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+
+.welcoming2{
+    @extend .welcoming;
+    font-size: 23px;
+    font-weight: bolder;
+    @media screen and (min-width: 768px){
+        font-size: 27px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 32px;
+    }
+}

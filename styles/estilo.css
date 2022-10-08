@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -14,53 +15,18 @@ h1 {
   font-size: 35px;
   font-style: bold;
   line-height: 30px;
-  color: #3896A0;
+  color: #015a64;
   margin-top: 16px;
   margin-bottom: 16px;
   align-self: center;
   text-align: center;
 }
 
-p {
-  margin-top: 16px;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 23px;
-  color: #050607;
-}
-
-h2 {
-  font-family: "Lato", sans-serif;
-  font-weight: 1200;
-  font-size: 28px;
-  font-style: bolder;
-  line-height: 30px;
-  color: #015a64;
-  margin-top: 8px;
-}
-
-button {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 8px;
-  margin: 40px;
-  background-color: #B8DFE3;
-  font-size: 24px;
-}
-
-footer {
-  background-color: #CCE3C3;
-  font-family: "Lato", sans-serif;
-  font-weight: 1000;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 30px;
-  color: #050607;
-  padding: 16px;
+.todo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 header {
@@ -72,19 +38,452 @@ header {
   line-height: 16px;
   color: #050607;
   padding: 8px;
-  display: flex;
-  flex-direction: row;
   padding: 24px;
 }
 
 nav ul li {
-  list-style-type: none;
-  display: inline-flex;
-  flex-direction: row;
-  text-decoration: none;
   justify-content: end;
   margin: 8px;
+}
+
+.my_mixin {
+  height: 50px;
+  width: 500px;
+}
+
+.logoHeader {
+  height: 40px;
+  width: 120px;
+  grid-area: logoHeader;
   align-self: center;
+}
+
+.footerImg {
+  height: 500px;
+  width: 500px;
+}
+
+.portfolio1 {
+  height: 150px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.footerLink {
+  height: 24px;
+  width: 24px;
+}
+
+h2 {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  font-style: bolder;
+  line-height: 30px;
+  color: #015a64;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servicesHome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item4 item3" "buttonPortfolio buttonPortfolio";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .servicesHome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item4 item3" "buttonPortfolio buttonPortfolio";
+    background-color: #F4CCA1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item5 item6" "buttonPortfolio buttonPortfolio";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .clients {
+    background-color: #F4CCA1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logoHeader {
+    width: 240px;
+    height: 80px;
+    grid-area: logoHeader;
+    align-self: center;
+  }
+}
+
+.home {
+  height: 150px;
+  width: 220px;
+  border-radius: 10px;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .home {
+    height: 250px;
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home {
+    height: 600px;
+    width: 810px;
+    margin-bottom: 16px;
+  }
+}
+
+.home2 {
+  height: 150px;
+  width: 200px;
+  border-radius: 10px;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .home2 {
+    height: 240px;
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home2 {
+    height: 600px;
+    width: 810px;
+    margin-bottom: 16px;
+  }
+}
+
+.home3 {
+  height: 120px;
+  width: 260px;
+  border-radius: 10px;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .home3 {
+    height: 250px;
+    width: 430px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home3 {
+    height: 400px;
+    width: 810px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contactPage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "usefulLinks meeting";
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contactPage {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "usefulLinks meeting";
+    gap: 36px;
+    margin-bottom: 0px;
+  }
+}
+
+.footer {
+  background-color: #CCE3C3;
+  font-family: "Lato", sans-serif;
+  font-weight: 1000;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 30px;
+  color: #000000;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+}
+
+.welcome, .costumerX, .copywriting, .uiDesign, .uxdesign, .uxResearch, .portfoliopre, .disney, .stportfolio, .early, .itWorld, .myOwnBusiness, .portfolioh, .clients, .aboutMe, .servicesHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 3px solid #015a64;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+@media screen and (min-width: 768px) {
+  .welcome, .costumerX, .copywriting, .uiDesign, .uxdesign, .uxResearch, .portfoliopre, .disney, .stportfolio, .early, .itWorld, .myOwnBusiness, .portfolioh, .clients, .aboutMe, .servicesHome {
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .usefulLinks {
+    grid-area: usefulLinks;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+p {
+  margin-top: 8px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 23px;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-weight: 550;
+    margin-top: 16px;
+  }
+}
+
+.recrearmeImg {
+  height: 140px;
+  width: 250px;
+  border-radius: 20px;
+  align-self: center;
+  grid-area: recrearmeImg;
+}
+@media screen and (min-width: 768px) {
+  .recrearmeImg {
+    height: 300px;
+    width: 540px;
+    border-radius: 30px;
+  }
+}
+.disneyImg {
+  height: 180px;
+  width: 250px;
+  border-radius: 20px;
+  align-self: center;
+  grid-area: disneyImg;
+}
+@media screen and (min-width: 768px) {
+  .disneyImg {
+    height: 380px;
+    width: 540px;
+    border-radius: 30px;
+  }
+}
+.portfolioImg {
+  height: 170px;
+  width: 250px;
+  border-radius: 20px;
+  align-self: center;
+  grid-area: portfolioImg;
+}
+@media screen and (min-width: 768px) {
+  .portfolioImg {
+    height: 370px;
+    width: 540px;
+    border-radius: 30px;
+  }
+}
+.mockup {
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+  align-self: center;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .mockup {
+    height: 600px;
+    width: 540px;
+    margin-top: 16px;
+    border-radius: 30px;
+  }
+}
+.mockup2 {
+  height: 140px;
+  width: 250px;
+  border-radius: 20px;
+  align-self: center;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .mockup2 {
+    height: 300px;
+    width: 540px;
+    border-radius: 30px;
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mockup2 {
+    height: 450px;
+    width: 810px;
+    margin-bottom: 16px;
+  }
+}
+
+.mockup3 {
+  height: 140px;
+  width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .mockup3 {
+    height: 320px;
+    width: 540px;
+    border-radius: 30px;
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mockup3 {
+    height: 470px;
+    width: 810px;
+    margin-bottom: 16px;
+  }
+}
+
+.mockup4 {
+  height: 140px;
+  width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .mockup4 {
+    height: 300px;
+    width: 540px;
+    border-radius: 30px;
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mockup4 {
+    height: 450px;
+    width: 810px;
+    margin-bottom: 16px;
+  }
+}
+
+.itemMeli {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  grid-area: itemMeli;
+  align-self: center;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .itemMeli {
+    height: 600px;
+    width: 420px;
+    border-radius: 30px;
+    margin-top: 16px;
+  }
+}
+
+.bodyItimg {
+  height: 200px;
+  width: 270px;
+  grid-area: bodyItimg;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .bodyItimg {
+    height: 400px;
+    width: 540px;
+    border-radius: 30px;
+    margin-top: 16px;
+  }
+}
+
+button {
+  padding: 8px;
+  margin: 16px;
+  background-color: #B8DFE3;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #B8DFE3;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  font-style: bold;
+  line-height: 30px;
+  color: #000000;
+  grid-area: buttonPortfolio;
+  border: 3px solid #015a64;
+  width: 180px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 280px;
+    font-size: 24px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+.welcoming2 {
+  font-size: 23px;
+  font-weight: bolder;
+}
+@media screen and (min-width: 768px) {
+  .welcoming2 {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .welcoming2 {
+    font-size: 32px;
+  }
 }
 
 .contactLinks {
@@ -106,90 +505,17 @@ nav ul li {
   margin-right: 40px;
 }
 
-.logoHeader {
-  width: 120px;
-  height: 40px;
-  grid-area: logoHeader;
-  align-self: center;
-}
-
 .navigation {
   grid-area: navigation;
   text-decoration: none;
 }
 
-nav {
-  text-decoration: none;
-  grid-area: nav;
-  align-self: center;
-  justify-items: center;
-  justify-content: center;
-}
-
-.welcome {
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
-  margin-left: 16px;
-  margin-right: 8px;
-}
-
 .servicesHome {
   background-color: #E2B3D4;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
-  margin-left: 8px;
-  margin-right: 16px;
-}
-
-.aboutMe {
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 .clients {
   background-color: #E2B3D4;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.portfolioh {
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .item1 {
@@ -220,40 +546,6 @@ nav {
   grid-area: item7;
 }
 
-.todo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.home {
-  width: 220px;
-  height: 150px;
-  border-radius: 10%;
-  align-self: center;
-}
-
-.home2 {
-  width: 200px;
-  height: 150px;
-  border-radius: 10%;
-  align-self: center;
-}
-
-.home3 {
-  width: 260px;
-  height: 120px;
-  border-radius: 10%;
-  align-self: center;
-}
-
-.portfolio1 {
-  width: 220px;
-  height: 150px;
-  border-radius: 10%;
-}
-
 .footerUl {
   grid-area: footerUl;
 }
@@ -266,23 +558,11 @@ footer ul li {
   justify-items: center;
 }
 
-.footerLink {
-  width: 24px;
-  height: 24px;
-}
-
-.itemMeli {
-  width: 200px;
-  height: 300px;
-  grid-area: itemMeli;
-  border-radius: 20%;
-  align-self: center;
-  margin-bottom: 8px;
-}
-
 .myOwnBusinessDiv {
   grid-area: myOwnBusinessDiv;
   padding: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .myOwnBusinessDiv h2 {
@@ -292,155 +572,55 @@ footer ul li {
 
 .myOwnBusiness {
   background-color: #E2B3D4;
-  border: 3px solid #015a64;
-  border-radius: 16px;
   grid-area: myOwnBusiness;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
 }
 
 .itWorld {
+  align-items: center;
   grid-area: itWorld;
-  display: flex;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .early {
   grid-area: early;
-  display: flex;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .bodyIt {
   grid-area: bodyIt;
 }
 
-.bodyItimg {
-  grid-area: bodyItimg;
-  width: 270px;
-  height: 200px;
-  align-self: center;
-}
-
-.footerImg {
-  width: 500px;
-  height: 500px;
-}
-
-.recrearmeImg {
-  width: 250px;
-  height: 140px;
-  align-self: center;
-  grid-area: recrearmeImg;
-  border-radius: 20px;
-}
-
-.disneyImg {
-  width: 250px;
-  height: 180px;
-  align-self: center;
-  grid-area: disneyImg;
-  border-radius: 20px;
-}
-
-.portfolioImg {
-  width: 250px;
-  height: 170px;
-  align-self: center;
-  grid-area: portfolioImg;
-  border-radius: 20px;
-}
-
-.buttonPortfolio {
-  padding: 16px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: #B8DFE3;
-  font-family: "Lato", sans-serif;
-  font-weight: bolder;
-  font-size: 18px;
-  font-style: bold;
-  line-height: 30px;
-  color: #050607;
-  grid-area: buttonPortfolio;
-  border: 3px solid #015a64;
-  width: 180px;
-  height: 60px;
-}
-
 .recrearmeText {
   grid-area: recrearmeText;
 }
 
-.recrearmeCta {
+.recrearmeCta, .portfolioCta, .disneyCta {
   grid-area: recrearmeCta;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  align-items: center;
   gap: 24px;
   margin-top: 24px;
   border: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .stportfolio {
   grid-area: stportfolio;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .disney {
   grid-area: disney;
   background-color: #E2B3D4;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .disneyText {
   grid-area: disneyText;
 }
 
-.disneyCta {
-  grid-area: disneyCta;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  gap: 24px;
-  margin-top: 24px;
-}
-
 .portfoliopre {
   grid-area: portfoliopre;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .portfolioText {
@@ -449,86 +629,22 @@ footer ul li {
 
 .portfolioCta {
   grid-area: portfolioCta;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  gap: 24px;
-  margin-top: 24px;
-}
-
-.mockup {
-  width: 250px;
-  height: 300px;
-  align-self: center;
-  border-radius: 20px;
-  justify-items: center;
-}
-
-.uxResearch {
-  display: flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .researchText {
   grid-area: researchText;
 }
 
-.reseachImg {
+.reseImg {
   grid-area: researchImg;
 }
 
 .uxdesign {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
   background-color: #E2B3D4;
-}
-
-.uiDesign {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .copywriting {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
   background-color: #E2B3D4;
-}
-
-.costumerX {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-  padding: 8px;
-  border: 3px solid #015a64;
-  border-radius: 16px;
-  margin-bottom: 8px;
 }
 
 .meeting {
@@ -543,123 +659,6 @@ footer ul li {
   margin-right: 24px;
 }
 
-@media screen and (min-width: 768px) {
-  .welcome {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item1 item2" "buttonPortfolio buttonPortfolio";
-  }
-  .servicesHome {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item4 item3" "buttonPortfolio buttonPortfolio";
-  }
-  .aboutMe {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item5 item6" "buttonPortfolio buttonPortfolio";
-  }
-  .clients {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logoHeader {
-    width: 240px;
-    height: 80px;
-    grid-area: logoHeader;
-    align-self: center;
-  }
-  .home {
-    width: 330px;
-    height: 250px;
-    border-radius: 10%;
-    align-self: center;
-  }
-  .home2 {
-    width: 320px;
-    height: 240px;
-    border-radius: 10%;
-    align-self: center;
-  }
-  .home3 {
-    width: 430px;
-    height: 250px;
-    margin-right: 16px;
-    border-radius: 10%;
-    align-self: center;
-  }
-  .contactPage {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "usefulLinks meeting";
-    gap: 24px;
-  }
-  footer {
-    background-color: #CCE3C3;
-    font-family: "Lato", sans-serif;
-    font-weight: 1000;
-    font-size: 14px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 30px;
-    color: #050607;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .contactPage {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: "usefulLinks meeting";
-    gap: 36px;
-    margin-bottom: 0px;
-  }
-  .todo {
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 4fr 1fr;
-    grid-template-areas: "header header" "welcome aboutMe" "servicesHome servicesHome" "clients clients" "footer footer";
-  }
-  .servicesHome {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item4 item3" "buttonPortfolio buttonPortfolio";
-    background-color: #F4CCA1;
-  }
-  .aboutMe {
-    background-color: #E2B3D4;
-  }
-  .clients {
-    background-color: #F4CCA1;
-  }
-  .welcome {
-    display: flex;
-    flex-direction: column;
-  }
-  .home2 {
-    width: 320px;
-    height: 240px;
-    border-radius: 10%;
-    align-self: center;
-  }
-  .home3 {
-    width: 430px;
-    height: 250px;
-    margin-right: 16px;
-    border-radius: 10%;
-    align-self: center;
-  }
-  .usefulLinks {
-    grid-area: usefulLinks;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  .usefulLinks {
-    grid-area: usefulLinks;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+.welcoming, .welcoming2 {
+  text-align: center;
 }/*# sourceMappingURL=estilo.css.map */

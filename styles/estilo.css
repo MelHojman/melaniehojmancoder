@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:wght@900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -27,6 +28,19 @@ h1 {
   flex-direction: column;
   justify-content: center;
   margin-top: 16px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+ul li {
+  color: #000000;
+}
+
+a {
+  color: #015a64;
+  text-decoration: none;
 }
 
 header {
@@ -86,7 +100,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   h2 {
-    padding: 16px;
+    padding: 24px;
   }
 }
 
@@ -214,7 +228,7 @@ h2 {
   }
 }
 
-.footer {
+footer {
   background-color: #CCE3C3;
   font-family: "Lato", sans-serif;
   font-weight: 1000;
@@ -228,7 +242,7 @@ h2 {
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  .footer {
+  footer {
     display: flex;
     flex-direction: row;
     margin-bottom: 0px;
@@ -240,20 +254,23 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8px;
-  border: 3px solid #015a64;
+  padding: 16px;
   border-radius: 20px;
-  margin-bottom: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 @media screen and (min-width: 768px) {
   .welcome, .costumerX, .copywriting, .uiDesign, .uxdesign, .uxResearch, .portfoliopre, .disney, .stportfolio, .early, .itWorld, .myOwnBusiness, .portfolioh, .clients, .aboutMe, .servicesHome {
     display: flex;
     flex-direction: column;
     font-size: 23px;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding: 24px;
+    border-radius: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .welcome, .costumerX, .copywriting, .uiDesign, .uxdesign, .uxResearch, .portfoliopre, .disney, .stportfolio, .early, .itWorld, .myOwnBusiness, .portfolioh, .clients, .aboutMe, .servicesHome {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 24px;
   }
 }
 
@@ -265,7 +282,7 @@ h2 {
   }
 }
 
-p {
+p, ul li {
   margin-top: 8px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -275,14 +292,16 @@ p {
   color: #000000;
 }
 @media screen and (min-width: 768px) {
-  p {
+  p, ul li {
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 @media screen and (min-width: 1024px) {
-  p {
+  p, ul li {
     font-weight: 550;
     margin-top: 16px;
   }
@@ -441,7 +460,7 @@ p {
 }
 
 button {
-  padding: 8px;
+  padding: 16px;
   margin: 16px;
   background-color: #B8DFE3;
   border-radius: 20px;
@@ -560,7 +579,7 @@ footer ul li {
 
 .myOwnBusinessDiv {
   grid-area: myOwnBusinessDiv;
-  padding: 8px;
+  padding: 16px;
   margin-left: 16px;
   margin-right: 16px;
 }

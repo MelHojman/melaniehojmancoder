@@ -26,3 +26,17 @@ h1{
     justify-content: center;
     margin-top: $marginCardsMobile;
 }
+
+ul{
+    text-align: center;
+    list-style-type: none;
+    li{
+        @extend p;
+        color:$colorNegro;
+    }
+}
+
+a{
+    color: $colorAzul;
+    text-decoration: none;
+}
